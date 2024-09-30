@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>List Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="first">
+            <i class="fa fa-heart-o"></i>
+            <span class="head">Now playing</span>
+            <i class="fa fa-plus"></i>
+        </div>
+        <div class="img">
+            <img src="./image/1.jpg" id="img">
+            <p id="pragraph">the first song</p>
+            <div class="prograss-bar">
+                <audio id="audio"></audio>
+            </div>
+        </div>
+        <div class="song-solidors">
+            <span class="currant">0:00</span>
+            <input type="range" id="nn" min="0" value="0" step="1">
+            <span class="song">0:00</span>
+        </div>
+        <div class="end">
+            <i class="fa fa-step-backward" onclick="back()"></i>
+            <i class="fa fa-pause" onclick="stop1()"></i>
+            <i class="fa fa-step-forward" onclick="next()"></i>
+        </div>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
